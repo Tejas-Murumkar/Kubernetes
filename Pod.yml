@@ -1,0 +1,13 @@
+#Code to create pods
+apiVersion: v1
+kind: Pod
+metadata:
+ name: nginx-app
+ labels:
+    app: nginx-app
+spec:
+   containers:
+        - name: nginx-cont
+          image: nginx:latest
+          ports:
+          - containerPort: 80
