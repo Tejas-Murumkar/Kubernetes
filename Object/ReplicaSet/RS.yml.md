@@ -1,4 +1,4 @@
-${\color{red}\textbf{RS-IN}}$
+${\color{yellow}\textbf{RS-IN}}$
 ````
 # ReplicaSet With In set based selector
 apiVersion: apps/v1
@@ -40,7 +40,7 @@ spec:
           ports:
           - containerPort: 81
 ````
-${\color{red}\textbf{NotIn}}$
+${\color{yellow}\textbf{NotIn}}$
 ````
 apiVersion: apps/v1
 kind: ReplicaSet
