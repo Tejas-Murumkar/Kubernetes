@@ -1,3 +1,5 @@
+${/colour{red}\textbf{RS-IN}}$
+````
 # ReplicaSet With In set based selector
 apiVersion: apps/v1
 kind: ReplicaSet
@@ -37,3 +39,7 @@ spec:
           image: httpd:latest
           ports:
           - containerPort: 81
+````
+${/colour{red}\textbf{NotIn}}$
+````
+
