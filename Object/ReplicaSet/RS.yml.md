@@ -1,3 +1,28 @@
+${\color{yellow}\textbf{ReplicaSet}}$
+````
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+ name: nginx-app
+ labels:
+    app: nginx-app
+spec:
+  replicas: 3
+  selector:
+     matchLabels:
+       app: nginx-app
+  template:
+     metadata:
+       name: nginx-temp
+       labels:
+          app: nginx-app
+     spec:
+       containers:
+        - name: nginx-cont
+          image: nginx:latest
+          ports:
+          - containerPort: 80
+````
 ${\color{yellow}\textbf{RS-IN}}$
 ````
 # ReplicaSet With In set based selector
@@ -40,7 +65,7 @@ spec:
           ports:
           - containerPort: 81
 ````
-${\color{yellow}\textbf{NotIn}}$
+${\color{yellow}\textbf{RS-NotIn}}$
 ````
 apiVersion: apps/v1
 kind: ReplicaSet
@@ -81,7 +106,7 @@ spec:
           ports:
           - containerPort: 81
 ````
-${\color{yellow}\textbf{Exists}}$
+${\color{yellow}\textbf{RS-Exists}}$
 ````
 # ReplicaSet With Exits set based selector
 apiVersion: apps/v1
