@@ -21,7 +21,8 @@ kubectl get pod -o wide
 kubectl exec -it <Pod-name> /bin/bash
 ````
 ${\color{green}\textbf{Replication Controller}}$<br>
-7. To list replication controller
+
+6. To list replication controller
 ````
 kubectl get rc
 ````
@@ -29,12 +30,78 @@ kubectl get rc
 ````
 kubectl apply -f <rc-filename>
 ````
-8. To delete rc
+8. To get brief details of rc
+````
+kubectl get rc -o wide
+````
+9. To delete rc
 ````
 kubectl delete rc <rc-name>
 ````
 ${\color{green}\text{ReplicaSet}}$<br>
+
 9. To run ReplicaSet
 ````
 kubectl apply -f <rs-filename>
 ````
+10. To List RS
+````
+kubectl get rs
+````
+11. To delete RS
+````
+kubectl delete rc <rc-name>
+````
+12. To get brief details of RS
+````
+kubectl get rs -o wide
+````
+
+${\color{green}\text{Delpoyment}}$<br>
+
+13. To run Deployment
+````
+kubectl apply -f <deploy-filename>
+````
+14. To List Deployment
+````
+kubectl get deployment
+````
+15. To Delete deployment
+````
+kubectl delete deployment <deployment-name>
+````
+16. To get brief details of Deployment
+````
+kubectl get deployment -o wide
+````
+17. To Create Deployment without file
+````
+kubectl create deployment <deployment-name> --image=<imagename> --replicas=<no.of replicas>
+````
+18. To Create yaml file from Deployment
+````
+kubectl get deployment -o yaml > <filename.yaml>
+````
+19. To update or change the image in deployment
+````
+kubectl set image deployment <deployment-name> <container-name>=<image-name>:<version> --record
+````
+20. To Check the rollout status
+````
+kubectl rollout status deployment <deployment-name>
+````
+21. To Check the history of changes made in deployment
+````
+kubectl rollout history deployment <deployment-name>
+````
+22. To Rollback to previous version
+````
+kubectl rollout undo deployment <deployment-name>
+````
+23. To Rollback to particular version of deployment
+````
+kubectl rollout undo deployment <deployment-name> --to-revision=<no. of the revision>
+````
+
+    
