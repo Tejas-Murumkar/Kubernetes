@@ -38,7 +38,7 @@ kubectl get rc -o wide
 ````
 kubectl delete rc <rc-name>
 ````
-${\color{green}\text{ReplicaSet}}$<br>
+## ${\color{green}\text{ReplicaSet}}$<br>
 
 9. To run ReplicaSet
 ````
@@ -57,7 +57,7 @@ kubectl delete rc <rc-name>
 kubectl get rs -o wide
 ````
 
-${\color{green}\text{Delpoyment}}$<br>
+## ${\color{green}\text{Delpoyment}}$<br>
 
 13. To run Deployment
 ````
