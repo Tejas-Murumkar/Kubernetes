@@ -20,7 +20,7 @@ kubectl get pod -o wide
 ````
 kubectl exec -it <Pod-name> /bin/bash
 ````
-${\color{green}\textbf{Replication Controller}}$
+${\color{green}\textbf{Replication Controller}}$<br>
 7. To list replication controller
 ````
 kubectl get rc
@@ -33,7 +33,7 @@ kubectl apply -f <rc-filename>
 ````
 kubectl delete rc <rc-name>
 ````
-${\color{green}\text{ReplicaSet}}$
+${\color{green}\text{ReplicaSet}}$<br>
 9. To run ReplicaSet
 ````
 kubectl apply -f <rs-filename>
