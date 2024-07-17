@@ -1,5 +1,5 @@
 # Kubernetes Commands
-${\color{green}\textbf{Pod}}$
+###${\color{green}\textbf{Pod}}$
 1. To Run the Pod
 ````
 kubectl apply -f <filename>
