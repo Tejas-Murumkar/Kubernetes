@@ -20,7 +20,7 @@ kubectl get pod -o wide
 ````
 kubectl exec -it <Pod-name> /bin/bash
 ````
-${\color{green}\textbf{Replication Controller}}$<br>
+## ${\color{green}\textbf{Replication Controller}}$<br>
 
 6. To list replication controller
 ````
