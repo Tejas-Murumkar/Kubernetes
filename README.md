@@ -1,5 +1,5 @@
 # Kubernetes Commands
-## ${\color{green}\textbf{Pod}}$
+## ${\color{lightblue}\textbf{Pod}}$
 1. To Run the Pod
 ````
 kubectl apply -f <filename>
@@ -20,7 +20,7 @@ kubectl get pod -o wide
 ````
 kubectl exec -it <Pod-name> /bin/bash
 ````
-## ${\color{green}\textbf{Replication Controller}}$<br>
+## ${\color{lightblue}\textbf{Replication Controller}}$<br>
 
 6. To list replication controller
 ````
@@ -38,7 +38,7 @@ kubectl get rc -o wide
 ````
 kubectl delete rc <rc-name>
 ````
-## ${\color{green}\text{ReplicaSet}}$<br>
+## ${\color{lightblue}\text{ReplicaSet}}$<br>
 
 9. To run ReplicaSet
 ````
@@ -57,7 +57,7 @@ kubectl delete rc <rc-name>
 kubectl get rs -o wide
 ````
 
-## ${\color{green}\text{Delpoyment}}$<br>
+## ${\color{lightblue}\text{Delpoyment}}$<br>
 
 13. To run Deployment
 ````
