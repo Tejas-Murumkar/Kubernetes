@@ -103,5 +103,35 @@ kubectl rollout undo deployment <deployment-name>
 ````
 kubectl rollout undo deployment <deployment-name> --to-revision=<no. of the revision>
 ````
+## ${\color{lightblue}\textbf{Namespace}}$<br>
+
+24. To Create Namespace
+````
+kubectl create namespace <namespace_name>
+````
+25. To List Namespaces
+````
+kubectl get namespaces
+````
+26. To list all pods with their namespaces
+````
+kubectl get pods --all-namespaces
+````
+27. To List pods in particular namespace
+````
+kubectl get pods -n <namespace_name>
+````
+28. To set default namespace
+````
+kubectl config set-context --current --namespace= <namespace_name>
+````
+29. To Create pod in particular namespace
+````
+kubectl apply -f <filename> --namespace=<namespace_name>
+````
+30. To display the current namespace
+````
+kubectl config view --minify | grep namespace:
+````
 
     
