@@ -13,4 +13,6 @@ kind: Pod
 metadata:
   name: nginx-pod
   namespace: nginx-ns
+spec:
+....
 ```
