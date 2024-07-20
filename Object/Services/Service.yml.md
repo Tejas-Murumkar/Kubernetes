@@ -1,4 +1,4 @@
-# $${\color{lightblue}\textbf{CLuster IP}}$$
+# $${\color{lightblue}\textbf{Cluster IP}}$$
 ## Deployment
 ```yml
 apiVersion: apps/v1
