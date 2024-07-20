@@ -37,5 +37,5 @@ spec:
    - name: mysvcports
      protocol: TCP
      port: 80
-```
      targetPort: 80
+```
