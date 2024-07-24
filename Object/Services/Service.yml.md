@@ -1,5 +1,5 @@
 # $${\color{lightblue}\textbf{Service}}$$
-## $${\color{lightblue}\textbf{Deployment}}$$
+## $${\color{lightlightblue}\textbf{Deployment}}$$
 ```yml
 apiVersion: apps/v1
 kind: Deployment
@@ -24,7 +24,7 @@ spec:
           ports:
             - containerPort: 80
 ```
-## $${\color{lightblue}\textbf{Cluster IP}}$$
+## $${\color{lightlightblue}\textbf{Cluster IP}}$$
 ```yml
 apiVersion: v1
 kind: Service
@@ -39,7 +39,7 @@ spec:
      port: 80
      targetPort: 80
 ```
-## $${\color{lightblue}\textbf{NodePort}}$$
+## $${\color{lightlightblue}\textbf{NodePort}}$$
 ```yml
 apiVersion: v1
 kind: Service
@@ -57,7 +57,7 @@ spec:
      nodePort: 30009
 ```
 
-## $${\color{lightblue}\textbf{LoadBalancer}}$$
+## $${\color{lightlightblue}\textbf{LoadBalancer}}$$
 ```yml
 apiVersion: v1
 kind: Service
