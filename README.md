@@ -134,4 +134,9 @@ kubectl apply -f <filename> --namespace=<namespace_name>
 kubectl config view --minify | grep namespace:
 ````
 
+ TO Check api versions
+```
+kubectl api-versions
+```
+
     
